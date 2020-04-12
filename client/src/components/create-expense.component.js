@@ -52,7 +52,7 @@ export default class CreateExpense extends Component {
 
   onChangePrice(e) {
     this.setState({
-      duration: e.target.value
+      price: e.target.value
     })
   }
 
@@ -103,7 +103,7 @@ export default class CreateExpense extends Component {
           </select>
         </div>
         <div className="form-group"> 
-          <label>Description: </label>
+          <label>Item Description: </label>
           <input  type="text"
               required
               className="form-control"
@@ -112,7 +112,7 @@ export default class CreateExpense extends Component {
               />
         </div>
         <div className="form-group">
-          <label>Price (in dollars): </label>
+          <label>Price: </label>
           <input 
               type="text" 
               className="form-control"

@@ -64,7 +64,7 @@ export default class EditExpense extends Component {
 
   onChangePrice(e) {
     this.setState({
-      duration: e.target.value
+      price: e.target.value
     })
   }
 
@@ -124,7 +124,7 @@ export default class EditExpense extends Component {
               />
         </div>
         <div className="form-group">
-          <label>Price (in dollars): </label>
+          <label>Price:</label>
           <input 
               type="text" 
               className="form-control"
