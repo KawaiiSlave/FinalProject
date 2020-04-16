@@ -14,6 +14,14 @@ mongoose.connect(
   { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true }
 );
 
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+}
+
+app.get('*', (req, res) => {
+	response.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+});
+
 const expensesRouter = require('./routes/expenses');
 const usersRouter = require('./routes/users');
 
