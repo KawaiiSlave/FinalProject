@@ -19,7 +19,7 @@ if (process.env.NODE_ENV === "production") {
 }
 
 app.get('*', (req, res) => {
-	response.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+	res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
 });
 
 const expensesRouter = require('./routes/expenses');
