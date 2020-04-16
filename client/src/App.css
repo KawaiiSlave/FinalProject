@@ -1,3 +1,13 @@
+#root {
+  background-image: url(https://i.ya-webdesign.com/images/vignette-png-1920x1080-2.png);
+}
+
+
+.container {
+  background-image: url();
+}
+
+
 .app-container {
   max-width: 35rem;
   margin: auto;
