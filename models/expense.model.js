@@ -1,3 +1,7 @@
+/*requiring module, setting a variable, and creating a 
+new model. Exporting it*/
+
+
 const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
