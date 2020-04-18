@@ -1,26 +1,23 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter as Router, Route} from "react-router-dom";
+import { BrowserRouter as Router, Route,} from "react-router-dom";
 import "./App.css"
-import Navbar from "./components/navbar.component"
-import ExpensesList from "./components/expenses-list.component";
-import EditExpense from "./components/edit-expense.component";
-import CreateExpense from "./components/create-expense.component";
-import CreateUser from "./components/create-user.component";
-//import { useAuth0 } from "./react-auth0-spa";
+import Navbar from "./components/navbar"
+import ExpensesList from "./components/expenses-list";
+import EditExpense from "./components/edit-expense";
+import CreateExpense from "./components/create-expense";
+import CreateUser from "./components/create-user";
+//import SimpleBottomNavigation from "./components/navigation";
+
 
 function App() {
-  /*const { loading } = useAuth0();
-
-  if (loading) {
-    return <div>Loading...</div>;
-  }*/
 
 
   return (
     <Router>
       <div className="container">
       <Navbar />
+      
       <br/>
       <div className="container has-text-centered">
         </div>
@@ -32,5 +29,7 @@ function App() {
     </Router>
   );
 }
+
+//Router helps map different url paths to different components
 
 export default App;

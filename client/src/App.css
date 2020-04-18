@@ -12,3 +12,7 @@
   max-width: 35rem;
   margin: auto;
 }
+
+html,body,#root {
+  height: 100%;
+}

@@ -74,6 +74,9 @@ export default class EditExpense extends Component {
     })
   }
 
+
+  //submit method that updates an expense that matches the same 
+  //id, and then upon update returns you to the list of expenses
   onSubmit(e) {
     e.preventDefault();
 
